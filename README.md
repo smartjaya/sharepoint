@@ -12,9 +12,15 @@ https://hc.apache.org/httpcomponents-client-4.3.x/httpclient/dependency-info.htm
 
 Integration with Webspeher Applicaiton Server
 =============================================
- Websphere applicaiton server has JAX-RS plugin which has lower http version and because of which even if the applicaiton has right version of the HTTP component, it picks the version that is avaialble in the system class loader and it fails to authenticate.
+Websphere applicaiton server has JAX-RS plugin which has lower http version and because of which even if the applicaiton has right version of the HTTP component, it picks the version that is avaialble in the system class loader and it fails to authenticate.
+
+Option 1 : Override the class loader for the appplication
+
+Option 2 : Configure Isolated Class loader for the applicaiton .
+
+In case your application cant chagne the class loader by changing parent last due to other depedency. 
  
- In order to overcome that issue we can create an isolate shared library and map the library for that applicaiton so that it is able to override the system class loader jar and estabilsh NTLM authentication.
+In order to overcome this  issue we can create an isolate shared library and map the library for that applicaiton so that it is able to override the system class loader jar and estabilsh NTLM authentication.
 
 
 
