@@ -1,4 +1,4 @@
-sharepoint Webservice integration with HTTPClient
+Sharepoint Webservice integration with HTTPClient
 =================================================
 
 Integration with Sharepoint Webservice Using NTLM V2 Authentication. Http Component above version 4 has inbuilt support of NTLM V2 authentication. 
