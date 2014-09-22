@@ -7,19 +7,13 @@ If we are using library below Version 4 and could not upgrade the jars we can us
 
 Maven
 ==========
-
+https://hc.apache.org/httpcomponents-client-4.3.x/httpclient/dependency-info.html
 
 <dependency>
 	<groupId>org.apache.httpcomponents</groupId>
 	<artifactId>httpclient</artifactId>
 	<version>4.3.5</version>
 </dependency>
-
-
-
-
-
-
 
 Integration with Webspeher Applicaiton Server
 =============================================
